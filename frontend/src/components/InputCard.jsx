@@ -41,7 +41,6 @@ function InputCard() {
   function handleClick() {
     setIsExpand(true);
   }
-
   return (
     <div
       onClick={handleClick}
@@ -75,6 +74,7 @@ function InputCard() {
           <Zoom in={isexpand}>
             <Fab
               onClick={createNote}
+              onMouseOut={handleMouseOut}
               className="absolute -bottom-5 -right-80 transform -translate-x-1/2   bg-gradient-to-r from-pink-500 hover:to-yellow-500  hover: from-green-400 to-blue-500"
               style={{
                 width: "40px",

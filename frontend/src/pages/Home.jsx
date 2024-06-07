@@ -57,18 +57,14 @@ function Home() {
       .then((res) => res.data)
       .then((data) => {
         setNotes(data);
-      })
-      .catch((err) => alert(err));
+      });
   };
 
   const deleteNote = (id) => {
-    api
-      .delete(`/api/notes/delete/${id}/`)
-      .then((res) => {
-        if (res.status !== 204) alert("Failed to delete note.");
-        getNotes();
-      })
-      .catch((error) => alert(error));
+    api.delete(`/api/notes/delete/${id}/`).then((res) => {
+      if (res.status !== 204) alert("Failed to delete note.");
+      getNotes();
+    });
   };
 
   function displayNotes(note) {
