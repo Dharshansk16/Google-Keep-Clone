@@ -3,7 +3,6 @@ import api from "../api";
 import { useNavigate } from "react-router-dom";
 import { ACCESS_TOKEN, REFRESH_TOKEN } from "../constants";
 import { Link } from "react-router-dom";
-import Register from "../pages/Register";
 
 function Form({ route, method }) {
   const [username, setUsername] = React.useState("");
@@ -113,7 +112,7 @@ function Form({ route, method }) {
               <Link to="/login">Already Signed In?</Link>
             </p>
           ) : (
-            <p className="inline-block align-baseline font-bold text-md text-blue-500 hover:text-blue-800">
+            <p className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800">
               <Link to="/register">Register</Link>
             </p>
           )}
