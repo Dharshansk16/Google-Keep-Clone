@@ -43,32 +43,34 @@ Ensure you have the following installed:
 ### Installation
 
 1. **Clone the repository:**
-    ```sh
+
+   ```sh
    git clone https://github.com/Dharshansk16/Google-Keep-Clone.git
    
-2.Navigate to the project directory:
-  cd keeper-app
+2. **Navigate to the project directory:**
+    ```sh
+      cd keeper-app
 
-3.Install frontend dependencies:
-npm install
+3. **Install frontend dependencies:**
+    ```sh
+    npm install
 
-4.Install backend dependencies (create a virtual environment first, if preferred):
-pip install -r requirements.txt
+4. **Install backend dependencies (create a virtual environment first, if preferred):**
+    ```sh
+    pip install -r requirements.txt
 
-5.Run frontend development server:
-npm start
+5. **Run frontend development server:**
+    ```sh
+    npm start
 
-6.Run backend development server:
+6.**Run backend development server:**
 
-python manage.py runserver
+    python manage.py runserver
 
-7.Open your web browser and go to http://localhost:3000 to access the application.
-```
 
   # Usage
-  
+
   Register for a new account or log in with existing credentials.
-  
   Navigate to the home page to manage your notes.
   Add new notes with a title and content.
   Edit existing notes or delete notes as needed.
